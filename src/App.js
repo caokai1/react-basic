@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import _ from 'lodash'
 import classNames from 'classnames'
 import tabData from './data/publicData.js'
@@ -55,6 +55,16 @@ const user = {
 }
 
 function App() {
+  const url = 'http://127.0.0.1:4523/m1/4103731-0-default/getlist'
+  useEffect(() => {
+    async function getList() {
+      const res = await fetch(url)
+      const data = await res.json()
+      console.log(data);
+      setTableData(data.tabelData)
+    }
+    getList()
+  }, [])
   // const [currentAct, setCurrentAct] = useState(1)
   // const handleClick = (e) => {
   //   setCurrentAct(e)
