@@ -1,0 +1,143 @@
+.flexWarp{
+    display: flex;
+    align-items: center;
+    &.line{
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.tabContent{
+    margin-right: 30px;
+    cursor: pointer;
+    padding-bottom: 8px;
+}
+.show{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+.containerBox{
+    width: 1200px;
+    margin: 0 auto;
+    .rowFlexBox{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        &:nth-child(2){
+            margin-bottom: 6px;
+        }
+        .bigTitle{
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 5px;
+            &+span{
+                font-size: 12px;
+                color: #666;
+              
+            }
+        }
+        .tabItem{
+            width: 80px;
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            span{
+                &:nth-child(2){
+                    height: 10px;
+                    border-right: 1px solid;
+                }
+            }
+            .selectTab{
+                color: #666;
+                &:hover{
+                    color: blue;
+                    cursor: pointer;
+                }
+                &.active{
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+        .userImage{
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            img{
+                width: 100%;
+            }
+        }
+        .userInputBox{
+            flex:1;
+            margin-left: 20px;
+height: 46px;
+border-radius: 8px;
+background-color: #ccc;
+line-height: 46px;
+padding-left: 20px;
+&.inputBack{
+    background-color: #f0f0f0;
+}
+input{
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+}
+        }
+    }
+    .flexEnd{
+        display: flex;
+        justify-content: flex-end;
+        button{
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #549c9e;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .replyItem{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ccc;
+        .replyUser{
+            display: flex;
+            .replyUserImage{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                border-radius: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .replyUserText{
+                flex: 1;
+                margin-left: 30px;
+                .replyContent{
+                    margin: 16px 0;
+                }
+                .flexB{
+                    display: flex;
+                    align-items: center;
+                    div{
+                        margin-right: 16px;
+                    }
+                    .del{
+                        color: red;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

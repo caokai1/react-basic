@@ -1,0 +1,36 @@
+const tabData = [
+    {
+        replyId: 3001,
+        user: {
+            avatar: 'https://img2.imgtp.com/2024/04/12/aRYe05s6.jpg',
+            userId: 3094,
+            userName: '高手',
+        },
+        content: '杀回东京hi编辑国际劳动节基地及哦i间谍经济数据',
+        likeCount: 11,
+        createTime: '2022-12-12 12:12:12',
+    },
+    {
+        replyId: 3002,
+        user: {
+            avatar: 'https://img2.imgtp.com/2024/04/12/aRYe05s6.jpg',
+            userId: 3094,
+            userName: '高手',
+        },
+        content: '杀回东京hi编辑国际劳动节基地及哦i间谍经济数据',
+        likeCount: 11,
+        createTime: '2022-12-14 12:12:12',
+    },
+    {
+        replyId: 3003,
+        user: {
+            avatar: 'https://img2.imgtp.com/2024/04/12/aRYe05s6.jpg',
+            userId: 3009,
+            userName: '高ee手',
+        },
+        content: '杀回东京hi编辑国际劳动节基地及哦i间谍经济数据',
+        likeCount: 18,
+        createTime: '2022-12-17 12:12:12',
+    }
+]
+export default tabData
